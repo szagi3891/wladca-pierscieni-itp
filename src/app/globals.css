@@ -66,3 +66,12 @@ body {
   pointer-events: none;
   z-index: 50;
 }
+
+/* Cienie tekstu dla lepszego kontrastu na jasnym tle mapy */
+.text-contrast {
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9), 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.text-contrast-strong {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.95), 0 4px 12px rgba(0, 0, 0, 0.7);
+}

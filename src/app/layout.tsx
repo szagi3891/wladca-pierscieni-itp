@@ -3,6 +3,7 @@ import { Cinzel, Crimson_Text } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MapBackground from "@/components/MapBackground";
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
@@ -32,6 +33,7 @@ export default function RootLayout({
       className={`${cinzel.variable} ${crimsonText.variable} h-full antialiased`}
     >
       <body className="page-border flex min-h-full flex-col">
+        <MapBackground />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
